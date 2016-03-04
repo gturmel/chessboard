@@ -60,9 +60,25 @@ footer {
 }
 
 .black {
-   background-color: hsla(225, 100%, 17%, 1);
+   background-color: hsla(28, 47%, 37%, 1);
 }
 
 .white {
-   background-color: hsla(225, 100%, 80%, 1);
+   background-color: hsla(28, 47%, 69%, 1);
+}
+
+.piece {
+   text-align: center;
+   font-size: 2.5em;
+   padding-top: 0.2em;
+}
+
+.white-piece {
+   @extend .piece;
+   color: white;
+}
+
+.move-nav {
+   margin-left: 20%;
+   margin-top: 1%;
 }

@@ -43,9 +43,21 @@ ul {
   margin-top: 15px; }
 
 .black {
-  background-color: #001657; }
+  background-color: #8b5b32; }
 
 .white {
-  background-color: #99b3ff; }
+  background-color: #d5ad8b; }
+
+.piece, .white-piece {
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 0.2em; }
+
+.white-piece {
+  color: white; }
+
+.move-nav {
+  margin-left: 20%;
+  margin-top: 1%; }
 
 /*# sourceMappingURL=styles.css.map */
