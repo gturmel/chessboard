@@ -3,16 +3,17 @@
 <head>
    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
    <link rel = "stylesheet" href="Assets/CSS/styles.css">
-   <script src = "bower_components/jquery/jquery.min.js"></script>
+   <script src = "bower_components/jquery/dist/jquery.min.js"></script>
    <title>Chessboard</title>
 </head>
 <body>
    <header class = "link-nav">
+      <h2>Chess Openings</h2>
    </header>
    <section class = "data">
       <ul class = "movelist">
       </ul>
-      <ul id = "a" class = "column-one">
+      <ul id = "a" class = "column">
          <li id = "a8" class = "tile white"></li>
          <li id = "a7" class = "tile black"></li>
          <li id = "a6" class = "tile white"></li>
@@ -21,9 +22,9 @@
          <li id = "a3" class = "tile black"></li>
          <li id = "a2" class = "tile white"></li>
          <li id = "a1" class = "tile black"></li>
-         <li class = "column-label"></li>
+         <li class = "column-label">A</li>
       </ul>
-      <ul id = "b" class = "column-two">
+      <ul id = "b" class = "column">
          <li id = "b8" class = "tile black"></li>
          <li id = "b7" class = "tile white"></li>
          <li id = "b6" class = "tile black"></li>
@@ -32,9 +33,9 @@
          <li id = "b3" class = "tile white"></li>
          <li id = "b2" class = "tile black"></li>
          <li id = "b1" class = "tile white"></li>
-         <li class = "column-label"></li>
+         <li class = "column-label">B</li>
       </ul>
-      <ul id = "c" class = "column-three">
+      <ul id = "c" class = "column">
          <li id = "c8" class = "tile white"></li>
          <li id = "c7" class = "tile black"></li>
          <li id = "c6" class = "tile white"></li>
@@ -43,9 +44,9 @@
          <li id = "c3" class = "tile black"></li>
          <li id = "c2" class = "tile white"></li>
          <li id = "c1" class = "tile black"></li>
-         <li class = "column-label"></li>
+         <li class = "column-label">C</li>
       </ul>
-      <ul id = "d" class = "column-four">
+      <ul id = "d" class = "column">
          <li id = "d8" class = "tile black"></li>
          <li id = "d7" class = "tile white"></li>
          <li id = "d6" class = "tile black"></li>
@@ -54,9 +55,9 @@
          <li id = "d3" class = "tile white"></li>
          <li id = "d2" class = "tile black"></li>
          <li id = "d1" class = "tile white"></li>
-         <li class = "column-label"></li>
+         <li class = "column-label">D</li>
       </ul>
-      <ul id = "e" class = "column-five">
+      <ul id = "e" class = "column">
          <li id = "e8" class = "tile white"></li>
          <li id = "e7" class = "tile black"></li>
          <li id = "e6" class = "tile white"></li>
@@ -65,9 +66,9 @@
          <li id = "e3" class = "tile black"></li>
          <li id = "e2" class = "tile white"></li>
          <li id = "e1" class = "tile black"></li>
-         <li class = "column-label"></li>
+         <li class = "column-label">E</li>
       </ul>
-      <ul id = "f" class = "column-six">
+      <ul id = "f" class = "column">
          <li id = "f8" class = "tile black"></li>
          <li id = "f7" class = "tile white"></li>
          <li id = "f6" class = "tile black"></li>
@@ -76,9 +77,9 @@
          <li id = "f3" class = "tile white"></li>
          <li id = "f2" class = "tile black"></li>
          <li id = "f1" class = "tile white"></li>
-         <li class = "column-label"></li>
+         <li class = "column-label">F</li>
       </ul>
-      <ul id = "g" class = "column-seven">
+      <ul id = "g" class = "column">
          <li id = "g8" class = "tile white"></li>
          <li id = "g7" class = "tile black"></li>
          <li id = "g6" class = "tile white"></li>
@@ -87,9 +88,9 @@
          <li id = "g3" class = "tile black"></li>
          <li id = "g2" class = "tile white"></li>
          <li id = "g1" class = "tile black"></li>
-         <li class = "column-label"></li>
+         <li class = "column-label">G</li>
       </ul>
-      <ul id = "h" class = "column-eight">
+      <ul id = "h" class = "column">
          <li id = "h8" class = "tile black"></li>
          <li id = "h7" class = "tile white"></li>
          <li id = "h6" class = "tile black"></li>
@@ -98,7 +99,7 @@
          <li id = "h3" class = "tile white"></li>
          <li id = "h2" class = "tile black"></li>
          <li id = "h1" class = "tile white"></li>
-         <li class = "column-label"></li>
+         <li class = "column-label">H</li>
       </ul>
       <ul class = "row-list">
          <li class = "row-number">1</li>

@@ -65,3 +65,8 @@ This is pretty basic.
 
 * Make the buttons look simple, but nice. Get that stuff obvious, yo.
 * See if you can find icons, if not, nbd, use greater than, less than, and pipe.
+
+
+# Things to Ask J or K:
+
+Why oh why do I need to add a negative margin to get the boxes to sit together? It's weird.
