@@ -136,7 +136,12 @@ var fifthMoveWhite = [
 var moveArrays = [startArray, firstMoveWhite, firstMoveBlack, secondMoveWhite, secondMoveBlack, thirdMoveWhite, thirdMoveBlack, fourthMoveWhite, fourthMoveBlack, fifthMoveWhite];
 
 var clickCounter = 0;
+
+// populates the board before the first click
+
 popBoard();
+
+// funtion to populate the board on click
 
 function popBoard (){
    for(var num = 0; num <=7; num++){
@@ -153,21 +158,28 @@ function popBoard (){
 
 // click events for the buttons
 
+      //advances the game one move
+if(clickCounter < 11){ //add another statement for lower limit clicks
 $("#forward").on("click", function(){
    clickCounter++;
    popBoard();
 });
+};
 
+      //goes to end of game
 $("#fast-forward").on("click", function(){
    clickCounter = moveArrays.length-1;
    popBoard();
 })
 
+      //reverses game one move
+// add if statement with upper and lower limits to this
 $("#back").on("click", function(){
    clickCounter--;
    popBoard();
 });
 
+      //resets gameboard
 $("#rewind").on("click", function(){
    clickCounter = 0;
    popBoard();
