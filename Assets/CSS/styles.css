@@ -33,7 +33,15 @@ ul {
 
 .row-list {
   position: absolute;
-  margin-left: 15px; }
+  margin-left: 15px;
+  margin-top: 20px; }
+
+.row-list-left {
+  position: absolute;
+  margin-top: 20px; }
+
+.movelist {
+  width: 20px; }
 
 .row-number {
   margin-top: 42px; }

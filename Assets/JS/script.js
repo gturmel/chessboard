@@ -150,10 +150,29 @@ function popBoard (){
       $("#"+rankLetters[num]+"8").html("<p class = 'piece'>"+moveArrays[clickCounter][0][num]+"</p>");//populates 8th rank
    };
 };
-// popBoard();
+
+// click events for the buttons
+
 $("#forward").on("click", function(){
    clickCounter++;
    popBoard();
 });
+
+$("#fast-forward").on("click", function(){
+   clickCounter = moveArrays.length-1;
+   popBoard();
+})
+
+$("#back").on("click", function(){
+   clickCounter--;
+   popBoard();
+});
+
+$("#rewind").on("click", function(){
+   clickCounter = 0;
+   popBoard();
+});
+
+
 
 }); //End of Line
