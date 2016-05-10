@@ -159,12 +159,16 @@ function popBoard (){
 // click events for the buttons
 
       //advances the game one move
-if(clickCounter < 11){ //add another statement for lower limit clicks
+ //add another statement for lower limit clicks
 $("#forward").on("click", function(){
-   clickCounter++;
-   popBoard();
+   if(clickCounter < moveArrays.length-1){
+      clickCounter++;
+      popBoard();
+   } else {
+      alert("That's the end of the Catalan Opening");
+   }
 });
-};
+
 
       //goes to end of game
 $("#fast-forward").on("click", function(){
@@ -175,9 +179,14 @@ $("#fast-forward").on("click", function(){
       //reverses game one move
 // add if statement with upper and lower limits to this
 $("#back").on("click", function(){
-   clickCounter--;
-   popBoard();
+   if(clickCounter > 0){
+      clickCounter--;
+      popBoard();
+   } else {
+      alert("You can't go farther back");
+   }
 });
+
 
       //resets gameboard
 $("#rewind").on("click", function(){
